@@ -14,7 +14,7 @@ Le système de co-conception que j'ai construit inclut **le noyau NIOS II**, **l
 图片
 
 Lorsque chaque afficheur à 7 segments nécessite un code de 4 bits, pour un compteur à 3 chiffres, nous avons besoin d'un module PIO de 12 bits.
-
+Pour faciliter le travail suivant, j'ai ajouté **le module timer** et les interruptions timer à QSYS à l'avance et j'ai réglé **la période du timer à 1 seconde**.
 Le schéma QSYS connecté selon le schéma ci-dessus est le suivant :
 
 # Avancement et Résultats
