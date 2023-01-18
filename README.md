@@ -16,6 +16,7 @@ Le système de co-conception que j'ai construit inclut **le noyau NIOS II**, **l
 Lorsque chaque afficheur à 7 segments nécessite un code de 4 bits, pour un compteur à 3 chiffres, nous avons besoin d'un module PIO de 12 bits.
 Pour faciliter le travail suivant, j'ai ajouté **le module timer** et les interruptions timer à QSYS à l'avance et j'ai réglé **la période du timer à 1 seconde**.
 Le schéma QSYS connecté selon le schéma ci-dessus est le suivant :
+![image](https://github.com/ESN2022/GU_LAB2/blob/main/qyqs_lab2.png)
 
 # Avancement et Résultats
 Après avoir connecté les composants, j'ai généré le langage de description hardware correspondant et j'ai également écrit une simple fonction de code binaire vers BCD en VHDL. Après la synthèse dans Quartus, je suis passé à la conception du module software.
