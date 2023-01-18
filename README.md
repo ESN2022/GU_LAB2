@@ -23,14 +23,17 @@ Après avoir connecté les composants, j'ai généré le langage de description 
 
 ## Compteur 1 bits
 Un compteur de 1 bits est simple, j'ai écrit une boucle de 0 à 9 dans le fichier C et ajouté un délai de 1 seconde - usleep(1000000) - entre chaque changement de valeur pour obtenir l'effet de temporisation.
+
 https://user-images.githubusercontent.com/90764364/213116814-85e4b047-e3ec-44f3-9693-c66026e02cba.mp4
 
 ## Compteur 3 bits avec polling
 Dans le même principe, je peux implémenter un compteur à 3 chiffres par polling, en utilisant juste 3 boucles pour compter de 0 à 999, comme dans la fonction précédente, j'ai ajouté une temporisation de 1 seconde.
+
 https://user-images.githubusercontent.com/90764364/213117203-87dfd08d-f691-4776-9644-142cd9e88074.mp4
 
 ## Compteur 3 bits avec timer
-Ayant préchargé le module de timer, j'ai donc pu modifier directement la partie software. Pour cela, j'ai créé la fonction **TIMER_IRQ()** pour gérer les interruptions. Chaque fois qu'une interruption est lancée, cette fonction fait un total interne et le total est introduit dans la fonction **int2seg()** pour prendre le reste des dixièmes et des centaines de bits respectivement, et enfin l'affichage à 7 segments correspondant est allumé via PIO
+Ayant préchargé le module de timer, j'ai donc pu modifier directement la partie software. Pour cela, j'ai créé la fonction **TIMER_IRQ()** pour gérer les interruptions. Chaque fois qu'une interruption est lancée, cette fonction fait un total interne et le total est introduit dans la fonction **int2seg()** pour prendre le reste des dixièmes et des centaines de bits respectivement, et enfin l'affichage à 7 segments correspondant est allumé via PIO.
+
 https://user-images.githubusercontent.com/90764364/213116976-e922c222-fea0-41ea-bd78-bef84bd8351b.mp4
 
 
