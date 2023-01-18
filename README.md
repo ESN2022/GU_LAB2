@@ -7,3 +7,7 @@ Les étapes du projet comprenaient la conception de l'architecture du système, 
 l'implémentation d'un compteur décimal de 1 et 3 bits à l'aide d'un programme C, 
 l'ajout ensuite d'un timer pour contrôler la vitesse de l'affichage sur un afficheur à 7 segments 
 et enfin la conversion des nombres en BCD à l'aide de composants hardware ou software.
+
+
+# Architecture du système
+Le système de co-conception que j'ai construit inclut **le noyau NIOS II**, **la mémoire RAM**, **un module UART**, **un PIO** puis **un afficheur 7 segments**, ainsi qu'**un module timer**. Le diagramme de structure est le suivant : 
