@@ -20,3 +20,10 @@ Le schéma QSYS connecté selon le schéma ci-dessus est le suivant :
 # Avancement et Résultats
 Après avoir connecté les composants, j'ai généré le langage de description hardware correspondant et j'ai également écrit une simple fonction de code binaire vers BCD en VHDL. Après la synthèse dans Quartus, je suis passé à la conception du module software.
 
+## Compteur 1 bits
+Un compteur de 1 bits est simple, j'ai écrit une boucle de 0 à 9 dans le fichier C et ajouté un délai de 1 seconde - usleep(1000000) - entre chaque changement de valeur pour obtenir l'effet de temporisation.
+
+## Compteur 3 bits avec polling
+Dans le même principe, je peux implémenter un compteur à 3 chiffres par polling, en utilisant juste 3 boucles pour compter de 0 à 999, comme dans la fonction précédente, j'ai ajouté une temporisation de 1 seconde.
+
+## Compteur 3 bits avec timer
