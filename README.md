@@ -27,4 +27,4 @@ Un compteur de 1 bits est simple, j'ai écrit une boucle de 0 à 9 dans le fichi
 Dans le même principe, je peux implémenter un compteur à 3 chiffres par polling, en utilisant juste 3 boucles pour compter de 0 à 999, comme dans la fonction précédente, j'ai ajouté une temporisation de 1 seconde.
 
 ## Compteur 3 bits avec timer
-Ayant préchargé le module de timer, j'ai donc pu modifier directement la partie software.
+Ayant préchargé le module de timer, j'ai donc pu modifier directement la partie software. Pour cela, j'ai créé la fonction **TIMER_IRQ()** pour gérer les interruptions. Chaque fois qu'une interruption est lancée, cette fonction fait un total interne et le total est introduit dans la fonction **int2seg()** pour prendre le reste des dixièmes et des centaines de bits respectivement, et enfin l'affichage à 7 segments correspondant est allumé via PIO
