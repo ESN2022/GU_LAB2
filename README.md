@@ -31,4 +31,4 @@ Ayant préchargé le module de timer, j'ai donc pu modifier directement la parti
 
 
 # Conclusion 
-Le deuxième TP était moins difficile que le premier parce qu'il n'impliquait qu'une interruption, mais celui-ci impliquait un développement plus poussé au niveau hardware, ce qui m'a beaucoup apporté et m'a donné un sens plus profond de la flexibilité de la co-conception.
+Le deuxième TP était moins difficile que le premier parce qu'il n'impliquait qu'une interruption, mais celui-ci impliquait un développement plus poussé au niveau hardware, ce qui m'a beaucoup apporté et m'a donné un sens plus profond de la flexibilité de la co-conception. L'utilisation d'une solution purement software pour allumer un afficheur à 7 segments n'est pas une tâche facile, mais dans le cadre de la co-conception, nous pouvons facilement implémenter un compteur à 3 chiffres en écrivant simplement la correspondance binaire vers BCD en VHDL à l'avance au niveau hardware, ce qui améliore certainement l'efficacité de notre développement.
