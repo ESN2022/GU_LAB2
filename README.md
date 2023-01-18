@@ -11,3 +11,6 @@ et enfin la conversion des nombres en BCD à l'aide de composants hardware ou so
 
 # Architecture du système
 Le système de co-conception que j'ai construit inclut **le noyau NIOS II**, **la mémoire RAM**, **un module UART**, **un PIO** puis **un afficheur 7 segments**, ainsi qu'**un module timer**. Le diagramme de structure est le suivant : 
+图片
+
+Lorsque chaque afficheur à 7 segments nécessite un code de 4 bits, pour un compteur à 3 chiffres, nous avons besoin d'un module PIO de 12 bits.
